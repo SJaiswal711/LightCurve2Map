@@ -133,4 +133,4 @@ np.savez("parametric_lightcurves_test.npz",
          params=all_params,
          indices=all_indices)
 
-print(" Saved → parametric_lightcurves_test.npz")
+print(" Saved → parametric_lightcurves_test_shapes.npz")
