@@ -43,7 +43,7 @@ def simulate_one_lc(opacity_map, v=0.4, t_ref=0.0, LDlaw='quadratic', LDCs=[0.3,
 # --------------------------
 # Load selected opacity maps
 # --------------------------
-maps = np.load("Data10/TestingSet/selected_maps.npy")
+maps = np.load("TestingSet/selected_maps.npy")
 print(f"✅ Loaded maps → shape={maps.shape}")
 
 
@@ -128,9 +128,9 @@ print(f"✅ Indices → shape={all_indices.shape}")
 # --------------------------
 # Save results
 # --------------------------
-np.savez("parametric_lightcurves_test_shapes.npz",
+np.savez("TestingSet/parametric_lightcurves_test_shapes.npz",
          fluxes=all_fluxes,
          params=all_params,
          indices=all_indices)
 
-print(" Saved → parametric_lightcurves_test_shapes.npz")
+print(" Saved → TestingSet/parametric_lightcurves_test_shapes.npz")
