@@ -128,7 +128,7 @@ print(f"✅ Indices → shape={all_indices.shape}")
 # --------------------------
 # Save results
 # --------------------------
-np.savez("parametric_lightcurves_test.npz",
+np.savez("parametric_lightcurves_test_shapes.npz",
          fluxes=all_fluxes,
          params=all_params,
          indices=all_indices)
